@@ -1,5 +1,9 @@
+
+import { useNavigate } from "react-router-dom";
+
 function Dashboard({ onLogout }) {
   const user = localStorage.getItem("user");
+  const navigate = useNavigate();
 
   return (
     <div className="container">
@@ -9,7 +13,7 @@ function Dashboard({ onLogout }) {
       <button
         onClick={() => {
           localStorage.removeItem("user");
-          onLogout();
+          navigate("/"); // balik ke login
         }}
       >
         Logout

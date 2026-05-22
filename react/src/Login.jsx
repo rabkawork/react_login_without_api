@@ -1,17 +1,22 @@
 import { useState } from 'react';
-
+import { useNavigate } from "react-router-dom";
 function Login({onLogin}) {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
+    const navigate = useNavigate();
 
     const handleLogin = () => {
+
         if(username === "" && password  === "") {
             alert('Mohon isi username dan password anda');
         } else {
             
             if (username === "admin" && password === "123") {
                 localStorage.setItem("user", username);
-                onLogin();
+                
+                navigate("/dashboard"); // 🚀 pindah halaman
+
+                //onLogin();
             } else {
                 alert("Username / Password salah");
             }
