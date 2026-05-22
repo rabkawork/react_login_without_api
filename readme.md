@@ -1,59 +1,80 @@
-# Basic 
+# Basic React Setup (Vite)
 
+## 🚀 Create Project
 
-# npm create vite@latest react-login
-bash > 
-
-root@PMIIDIDNL33101:~/react_login_without_api#
+```bash
 npm create vite@latest react
-Need to install the following packages:
-create-vite@9.0.7
-Ok to proceed? (y) y
+```
 
+Follow the prompt:
 
-> npx
-> create-vite react
+- Select a framework: **React**
+- Select a variant: **JavaScript**
+- Install with npm: **Yes**
 
-│
-◇  Select a framework:
-│  React
-│
-◇  Select a variant:
-│  JavaScript
-│
-◇  Install with npm and start now?
-│  Yes
-│
-◇  Scaffolding project in /root/react_login_without_api/react...
-│
-◇  Installing dependencies with npm...
+---
 
-added 135 packages, and audited 136 packages in 29s
+## 📦 Installation Process Example
 
-31 packages are looking for funding
-  run `npm fund` for details
+```bash
+Scaffolding project...
+
+Installing dependencies...
+
+added 135 packages, and audited 136 packages
 
 found 0 vulnerabilities
-│
-◇  Starting dev server...
+```
 
-> react@0.0.0 dev
-> vite
+---
 
+## ▶️ Run Project
 
-  VITE v8.0.14  ready in 220 ms
+```bash
+cd react
+npm run dev
+```
 
-  ➜  Local:   http://localhost:5173/
-  ➜  Network: use --host to expose
-  ➜  press h + enter to show help
-^Z
-[1]+  Stopped                 npm create vite@latest react
+---
 
+## 🌐 Development Server
 
+```bash
+VITE v8.x.x ready
 
+➜ Local: http://localhost:5173/
+```
 
-# cd react-login
-# npm install
-# npm run dev
+Open in browser:
 
+```
+http://localhost:5173/
+```
 
+---
+
+## 🛠 Notes
+
+If the process is stopped (Ctrl + Z), run again:
+
+```bash
+npm run dev
+```
+
+---
+
+## 📥 Manual Alternative
+
+```bash
+cd react
+npm install
+npm run dev
+```
+
+---
+
+## ✅ Result
+
+- React app running via Vite
+- Development server ready
+- Ready for development 🚀
