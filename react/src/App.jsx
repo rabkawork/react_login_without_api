@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import Login from "./Login";
 import Dashboard from "./Dashboard";
-import "./styles.css";
+import "./style.css";
 
 function App() {
   const [isLogin, setIsLogin] = useState(false);
